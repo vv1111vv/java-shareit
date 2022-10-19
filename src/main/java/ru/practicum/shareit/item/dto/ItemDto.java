@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.practicum.shareit.request.ItemRequest;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -19,10 +20,10 @@ import javax.validation.constraints.NotNull;
 public class ItemDto {
     long id;
 
-    @NotEmpty
+    @NotBlank
     String name;
 
-    @NotEmpty
+    @NotBlank
     String description;
 
     @NotNull
